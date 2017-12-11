@@ -19,9 +19,9 @@ npm install address-autocomplete
 
 
 ```js
-import yandex, {configure} from 'address-autocomplete/mapzen';
-import google, {configure} from 'address-autocomplete/mapzen';
 import mapzen, {configure} from 'address-autocomplete/mapzen';
+import google, {configure} from 'address-autocomplete/google';
+import yandex, {configure} from 'address-autocomplete/yandex';
 
 // Google and MapZen does require an API key;
 configure('YOUR_API_KEY');
@@ -41,7 +41,16 @@ PS: To say they truth - you have to call getDetails __only__ for Google API. All
 mapzen
 .search('something')
 .then(fullData => {
-  // hooray!
+  // hooray! I've got everything!
+})
+```
+
+```js
+google
+.search('something')
+.then(fullData => {
+  // only fullData[0].text
+  // noooo :( :(
 })
 ```
 

@@ -1,5 +1,4 @@
 import yandex, {configure} from '../src/vendor/yandex';
-import world from 'iso3166-2-db/i18n/dispute/UN/en';
 
 describe("vendor yandex", () => {
   it('should not throw without configuration', () => {

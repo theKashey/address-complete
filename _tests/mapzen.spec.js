@@ -1,7 +1,8 @@
 import mapzen, {configure} from '../src/vendor/mapzen';
 import world from 'iso3166-2-db/i18n/dispute/UN/en';
 
-const apiKey = 'mapzen-fgHW3MX';//process.env.MAPZEN_APIKEY;
+// test mapzen key
+const apiKey = 'mapzen-fgHW3MX';
 
 describe("vendor mapzen", () => {
   it('should throw without configuration', () => {

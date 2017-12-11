@@ -2,7 +2,6 @@
   "name": "address-complete",
   "version": "1.0.0",
   "description": "What are you looking for?",
-  "main": "index.js",
   "scripts": {
     "build": "babel src -d lib",
     "prepublish": "npm run build",
@@ -10,6 +9,18 @@
     "lint:fix": "eslint src tests --fix",
     "test": "jest"
   },
+  "files":[
+    "lib",
+    "google.ts",
+    "google.js",
+    "google.js.flow",
+    "yandex.ts",
+    "yandex.js",
+    "yandex.js.flow",
+    "mapzen.ts.",
+    "mapzen.js",
+    "mapzen.js.flow"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theKashey/address-complete.git"
