@@ -1,0 +1,14 @@
+// @flow
+import mapzen, {configure} from './src/vendor/mapzen';
+import type {IDetailedProvider} from "./src/util/IProvider";
+
+/**
+ * @name configure
+ * @type function
+ * @param {String} apiKey - API Key
+ * @param {Object} [countries] - could be omitted.
+ * @param {Object} [settings]
+ */
+export const configure = configure;
+
+export default (mapzen: IDetailedProvider);

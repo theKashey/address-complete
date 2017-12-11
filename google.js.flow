@@ -1,0 +1,15 @@
+// @flow
+
+import google, {configure} from './vendor/google';
+import type {IProvider} from './util/IProvider'
+
+/**
+ * @name configure
+ * @type function
+ * @param {String} apiKey - API Key
+ * @param {Object} [countries] - provide countries information to obtain country/region CODE.
+ * @param {Object} [settings]
+ */
+export const configure = configure;
+
+export default (google:IProvider)

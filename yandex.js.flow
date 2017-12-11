@@ -1,0 +1,13 @@
+import yandex, {configure} from './src/vendor/yandex';
+import type {IDetailedProvider} from './src/util/IProvider'
+
+/**
+ * @name configure
+ * @type function
+ * @param {String} [apiKey] - omitted for YandexMaps
+ * @param {Object} [countries] - omitted for YandexMaps
+ * @param {Object} [settings]
+ */
+export const configure = configure;
+
+export default (yandex:IDetailedProvider);
