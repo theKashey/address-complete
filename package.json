@@ -39,11 +39,11 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.13.0",
-    "iso3166-2-db": "^2.2.0",
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1"
   },
   "dependencies": {
-    "detect-node": "^2.0.3"
+    "detect-node": "^2.0.3",
+    "iso3166-2-db": "^2.2.0"
   }
 }
