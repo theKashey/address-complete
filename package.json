@@ -11,6 +11,7 @@
   },
   "files": [
     "lib",
+    "src",
     "google.ts",
     "google.js",
     "google.js.flow",
