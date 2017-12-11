@@ -1,6 +1,6 @@
 {
   "name": "address-complete",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "What are you looking for?",
   "scripts": {
     "build": "babel src -d lib",
@@ -9,7 +9,7 @@
     "lint:fix": "eslint src tests --fix",
     "test": "jest"
   },
-  "files":[
+  "files": [
     "lib",
     "google.ts",
     "google.js",
