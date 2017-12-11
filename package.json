@@ -1,6 +1,6 @@
 {
   "name": "address-complete",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "What are you looking for?",
   "main": "index.js",
   "scripts": {
