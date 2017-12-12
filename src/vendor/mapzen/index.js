@@ -1,8 +1,10 @@
 import defaultConfig from './config';
-import {distanceSort, sortResults} from "../../util/vector";
-import ISO3TOISO2 from 'iso3166-2-db/mapping/ISO3TO2';
-import woff2iso from 'iso3166-2-db/mapping/woff2iso'
+import {sortResults} from "../../util/vector";
 import getLocation from "../../util/getLocation";
+
+import ISO3TOISO2 from /* preval */ 'iso3166-2-db/mapping/ISO3TO2';
+import woff2iso from /* preval */ 'iso3166-2-db/mapping/woff2iso'
+
 
 const getGid = (str) => (str ? str.split(':')[2] : undefined);
 
