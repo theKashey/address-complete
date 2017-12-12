@@ -2,7 +2,7 @@ import google, { configure } from '../src/vendor/google';
 import world from 'iso3166-2-db/i18n/dispute/UN/en';
 
 // apikey from google examples :D
-const apiKey = 'AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM';
+  const apiKey = 'AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM';
 
 describe("vendor google", () => {
   it('should throw without configuration', () => {

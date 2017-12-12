@@ -17,8 +17,16 @@ npm install address-autocomplete
  %provider_name%.search(term): Promise<Address>
  %provider_name%.getDetails(term): Promise<DetailedAddress>
 
+### MAPZEN all the things.
+Nor google, nor yandex __will NOT work in browser__ due to CORS limitations.
 
-```js
+Use mapzen instead.
+
+## Example
+
+there is live example at codesandbox - https://codesandbox.io/s/y382k7n61j
+
+```typescript
 import mapzen, {configure} from 'address-autocomplete/mapzen';
 import google, {configure} from 'address-autocomplete/google';
 import yandex, {configure} from 'address-autocomplete/yandex';
@@ -41,7 +49,7 @@ PS: To say they truth - you have to call getDetails __only__ for Google API. All
 mapzen
 .search('something')
 .then(fullData => {
-  // hooray! I've got everything!
+  // hooray! I've already got everything!
 })
 ```
 

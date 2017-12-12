@@ -15,6 +15,16 @@ const formatResponse = (json, focus) => {
 
   const result = features.map((feature, index) => {
     const props = feature.properties;
+    let region = {
+      name: props.region,
+      code: props.region_a || woff2iso[getGid(props.region_gid)]
+    };
+    if(!region.code && props.macroregion_gid && woff2iso[getGid(props.region_gid)]){
+      region = {
+        name: props.macroregion,
+        code: woff2iso[getGid(props.macroregion_gid)]
+      };
+    }
     return {
       id: index,
       point: feature.geometry.coordinates,
@@ -25,10 +35,7 @@ const formatResponse = (json, focus) => {
           name: props.country,
           code: ISO3TOISO2[props.country_a]
         },
-        region: {
-          name: props.region,
-          code: props.region_a || woff2iso[getGid(props.region_gid)]
-        },
+        region: region,
         locality: {
           name: props.locality
         },

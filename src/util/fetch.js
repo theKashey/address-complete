@@ -31,8 +31,6 @@ if (isNode) {
 } else {
   fetch = path => (
     new Promise((resolve, reject) => {
-      console.log('open', path);
-
       const xhr = new XMLHttpRequest();
       xhr.open('GET', path, true);
 
