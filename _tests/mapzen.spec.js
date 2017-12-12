@@ -28,4 +28,22 @@ describe("vendor mapzen", () => {
           })
       });
   });
+
+  it('shouble be able to use macroregion as region', async () => {
+    configure(apiKey);
+    return mapzen
+      .search('Paris')
+      .then(results => {
+        expect(results).not.toHaveLength(0);
+        return mapzen
+          .getDetails(results[0])
+          .then(line => {
+            console.log(line);
+            expect(Math.floor(line.point[0])).toEqual(2);
+            expect(Math.floor(line.point[1])).toEqual(48);
+            expect(line.addressDetails.country.code).toEqual('FR');
+            expect(line.addressDetails.region.code).toEqual('J');
+          })
+      });
+  });
 })

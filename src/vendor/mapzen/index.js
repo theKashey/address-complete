@@ -21,11 +21,14 @@ const formatResponse = (json, focus) => {
       name: props.region,
       code: props.region_a || woff2iso[getGid(props.region_gid)]
     };
-    if(!region.code && props.macroregion_gid && woff2iso[getGid(props.region_gid)]){
-      region = {
-        name: props.macroregion,
-        code: woff2iso[getGid(props.macroregion_gid)]
-      };
+    if(!region.code) {
+      const macroRegionGid = getGid(props.macroregion_gid);
+      if (macroRegionGid && woff2iso[macroRegionGid]) {
+        region = {
+          name: props.macroregion,
+          code: woff2iso[getGid(props.macroregion_gid)]
+        };
+      }
     }
     return {
       id: index,
