@@ -1,4 +1,7 @@
 # address-complete
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/theKashey/address-complete.svg)](https://greenkeeper.io/)
+
 What are you looking for? Or __how__?
 
 Address-complete provide unified way to perform address autocomplete using 3 geo-data providers:
